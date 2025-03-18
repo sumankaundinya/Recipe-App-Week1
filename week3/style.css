@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("indianFlag.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+/* Recipe Container */
+#recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #000000;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px #f80101da;
+  width: 280px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card h2 {
+  font-size: 1.5rem;
+  color: #ff5733;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Ingredients List */
+.recipe-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-card ul li {
+  background: #ffcf56;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.recipe-card p {
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 500; /* Medium weight */
+  color: #ff5733; /* Golden yellow */
+  text-align: center;
+  font-style: italic; /* Add an elegant italic touch */
+  margin-top: 8px;
+}
+.recipe-card h3 {
+  color: #ffcf56; /* Golden yellow */
+  font-size: 1.2rem; /* Adjust size if needed */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #ff5733, #ff8d33);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  margin-bottom: 10px; /* Default space between buttons */
+}
+#add-ingredient {
+  margin-bottom: 5px; /* Add some spacing below the + Add More button */
+}
+
+/* Add margin between buttons */
+button + button {
+  margin-top: 100px; /* Adjust the spacing as needed */
+}
+button:hover {
+  background: linear-gradient(45deg, #ff8d33, #ff5733);
+}
+
+/* Search Input */
+#search-input {
+  padding: 10px;
+  width: 60%;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ff5733;
+  margin-bottom: 20px;
+}
+h2 {
+  color: #ff5733; /* Change to your preferred color */
+}
+
+/* Form Styling */
+form {
+  background: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+}
+#recipe-form h2 {
+  color: #ff5733; /* Vibrant orange */
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.recipe-card ul li {
+  color: #fff; /* White text */
+  background: #ff5733; /* Orange background */
+  font-weight: bold;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+#recipe-form .ingredient-entry {
+  font-weight: bold;
+}
+#recipe-form h3 {
+  color: #ff5733; /* Change this to your preferred color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* Input Fields */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ff5733;
+  border-radius: 8px;
+  font-size: 1rem;
+  position: relative;
+  left: 0px; /* Moves these fields slightly to the right */
+  width: calc(100% - 20px); /* Keeps it responsive */
+}
+#description {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ff5733;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  font-size: 1rem;
+  position: relative;
+  left: 0%; /* Moves the field slightly to the right */
+  width: calc(100% - 20px); /* Keeps it responsive */
+}
+/* Ingredient Entry */
+.ingredient-entry {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Change background color of input, textarea, and select fields */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #fff; /* Set the text color for placeholder */
+}
+
+/* Style for input, textarea, and select to make the background orange */
+input,
+textarea,
+select {
+  background-color: #04381e; /* Background color */
+  color: white; /* Text color */
+}
+/* Style for the cooking timer container */
+.timer-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for the input field */
+#timerInput {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Style for the Start Timer button */
+#startTimer {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#startTimer:hover {
+  background-color: #218838;
+}
+
+/* Style for the timer display */
+#timerDisplay {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: white;
+}
