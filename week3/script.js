@@ -213,7 +213,7 @@ document
     ingredientContainer.innerHTML = "";
     ingredientContainer.appendChild(createIngredientInput());
   });
-// Get elements
+
 const timerInput = document.getElementById("timerInput");
 const startButton = document.getElementById("startTimer");
 const timerDisplay = document.getElementById("timerDisplay");
@@ -222,12 +222,11 @@ timerInput.addEventListener("focus", () => {
     timerInput.placeholder = "";
   }
 });
-// Create an audio element for the alert sound
-const alertSound = new Audio("beep.wav"); // Replace with your own sound file
+
+const alertSound = new Audio("beep.wav");
 
 let countdown;
 
-// Start Timer Function
 startButton.addEventListener("click", function () {
   let timeLeft = parseInt(timerInput.value, 10);
   if (isNaN(timeLeft) || timeLeft <= 0) {
@@ -235,7 +234,7 @@ startButton.addEventListener("click", function () {
     return;
   }
 
-  clearInterval(countdown); // Clear any existing timer
+  clearInterval(countdown);
   timerDisplay.textContent = `Time left: ${timeLeft} seconds`;
 
   countdown = setInterval(() => {
@@ -252,22 +251,19 @@ startButton.addEventListener("click", function () {
       // Show a non-blocking alert
       setTimeout(() => {
         alert("Time's up!");
-      }, 100); // Slight delay to ensure sound plays first
+      }, 100);
     }
   }, 1000);
 });
 
-// Select a place to display the timer
 const timeSpentDisplay = document.createElement("p");
 document.body.appendChild(timeSpentDisplay);
 
-let timeSpent = 0; // Counter to store time spent in seconds
+let timeSpent = 0;
 
-// Function to update the timer every second
 function updateTimeSpent() {
   timeSpent++;
   timeSpentDisplay.textContent = `Time spent on this page: ${timeSpent} seconds`;
 }
 
-// Start counting when the page loads
 setInterval(updateTimeSpent, 1000);

@@ -71,16 +71,16 @@ h1 {
   text-align: center;
 }
 .recipe-card p {
-  font-size: 1rem; /* Adjust font size */
-  font-weight: 500; /* Medium weight */
-  color: #ff5733; /* Golden yellow */
+  font-size: 1rem; 
+  font-weight: 500; 
+  color: #ff5733; 
   text-align: center;
-  font-style: italic; /* Add an elegant italic touch */
+  font-style: italic; 
   margin-top: 8px;
 }
 .recipe-card h3 {
-  color: #ffcf56; /* Golden yellow */
-  font-size: 1.2rem; /* Adjust size if needed */
+  color: #ffcf56; 
+  font-size: 1.2rem; 
   text-align: center;
   font-weight: bold;
 }
@@ -98,21 +98,21 @@ button {
   display: block;
   width: 100%;
   transition: 0.3s;
-  margin-bottom: 10px; /* Default space between buttons */
+  margin-bottom: 10px; 
 }
 #add-ingredient {
-  margin-bottom: 5px; /* Add some spacing below the + Add More button */
+  margin-bottom: 5px; 
 }
 
-/* Add margin between buttons */
+
 button + button {
-  margin-top: 100px; /* Adjust the spacing as needed */
+  margin-top: 100px; 
 }
 button:hover {
   background: linear-gradient(45deg, #ff8d33, #ff5733);
 }
 
-/* Search Input */
+
 #search-input {
   padding: 10px;
   width: 60%;
@@ -122,10 +122,10 @@ button:hover {
   margin-bottom: 20px;
 }
 h2 {
-  color: #ff5733; /* Change to your preferred color */
+  color: #ff5733; 
 }
 
-/* Form Styling */
+
 form {
   background: #000000;
   padding: 20px;
@@ -135,15 +135,15 @@ form {
   margin: 20px auto;
 }
 #recipe-form h2 {
-  color: #ff5733; /* Vibrant orange */
+  color: #ff5733; 
   font-size: 1.8rem;
   text-align: center;
   font-weight: bold;
 }
 
 .recipe-card ul li {
-  color: #fff; /* White text */
-  background: #ff5733; /* Orange background */
+  color: #fff; 
+  background: #ff5733; 
   font-weight: bold;
   padding: 8px;
   margin: 5px 0;
@@ -154,11 +154,11 @@ form {
   font-weight: bold;
 }
 #recipe-form h3 {
-  color: #ff5733; /* Change this to your preferred color */
+  color: #ff5733; 
   font-size: 1.5rem;
   font-weight: bold;
 }
-/* Input Fields */
+
 input,
 select {
   width: 100%;
@@ -168,8 +168,8 @@ select {
   border-radius: 8px;
   font-size: 1rem;
   position: relative;
-  left: 0px; /* Moves these fields slightly to the right */
-  width: calc(100% - 20px); /* Keeps it responsive */
+  left: 0px; 
+  width: calc(100% - 20px); 
 }
 #description {
   width: 100%;
@@ -180,31 +180,30 @@ select {
   border-radius: 8px;
   font-size: 1rem;
   position: relative;
-  left: 0%; /* Moves the field slightly to the right */
-  width: calc(100% - 20px); /* Keeps it responsive */
-}
-/* Ingredient Entry */
+  left: 0%; 
+  width: calc(100% - 20px); 
+
 .ingredient-entry {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
 }
 
-/* Change background color of input, textarea, and select fields */
+
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: #fff; /* Set the text color for placeholder */
+  color: #fff; 
 }
 
-/* Style for input, textarea, and select to make the background orange */
+
 input,
 textarea,
 select {
-  background-color: #04381e; /* Background color */
-  color: white; /* Text color */
+  background-color: #04381e; 
+  color: white; 
 }
-/* Style for the cooking timer container */
+
 .timer-container {
   text-align: center;
   margin-top: 20px;
@@ -217,7 +216,7 @@ select {
   margin-right: auto;
 }
 
-/* Style for the input field */
+
 #timerInput {
   width: 80%;
   padding: 8px;
@@ -228,7 +227,7 @@ select {
   font-size: 16px;
 }
 
-/* Style for the Start Timer button */
+
 #startTimer {
   background-color: #28a745;
   color: white;
@@ -244,7 +243,7 @@ select {
   background-color: #218838;
 }
 
-/* Style for the timer display */
+
 #timerDisplay {
   font-size: 18px;
   font-weight: bold;
@@ -252,7 +251,7 @@ select {
   color: #333;
 }
 
-/* Footer */
+
 footer {
   margin-top: 20px;
   font-size: 1rem;
