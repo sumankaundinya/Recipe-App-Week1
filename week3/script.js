@@ -245,10 +245,8 @@ startButton.addEventListener("click", function () {
       clearInterval(countdown);
       timerDisplay.textContent = "Time's up!";
 
-      // Play sound
       alertSound.play();
 
-      // Show a non-blocking alert
       setTimeout(() => {
         alert("Time's up!");
       }, 100);

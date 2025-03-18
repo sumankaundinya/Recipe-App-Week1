@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: "Poppins", sans-serif;
   background-image: url("indianFlag.jpg");
@@ -10,7 +9,6 @@ body {
   text-align: center;
 }
 
-/* Heading */
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -19,7 +17,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Recipe Container */
 #recipe-container {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +25,6 @@ h1 {
   padding: 20px;
 }
 
-/* Recipe Card */
 .recipe-card {
   background: #000000;
   border-radius: 12px;
@@ -56,7 +52,6 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* Ingredients List */
 .recipe-card ul {
   list-style-type: none;
   padding: 0;
@@ -71,21 +66,20 @@ h1 {
   text-align: center;
 }
 .recipe-card p {
-  font-size: 1rem; 
-  font-weight: 500; 
-  color: #ff5733; 
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff5733;
   text-align: center;
-  font-style: italic; 
+  font-style: italic;
   margin-top: 8px;
 }
 .recipe-card h3 {
-  color: #ffcf56; 
-  font-size: 1.2rem; 
+  color: #ffcf56;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
 }
 
-/* Buttons */
 button {
   background: linear-gradient(45deg, #ff5733, #ff8d33);
   border: none;
@@ -98,20 +92,18 @@ button {
   display: block;
   width: 100%;
   transition: 0.3s;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 #add-ingredient {
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
-
 button + button {
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 button:hover {
   background: linear-gradient(45deg, #ff8d33, #ff5733);
 }
-
 
 #search-input {
   padding: 10px;
@@ -122,9 +114,8 @@ button:hover {
   margin-bottom: 20px;
 }
 h2 {
-  color: #ff5733; 
+  color: #ff5733;
 }
-
 
 form {
   background: #000000;
@@ -135,15 +126,15 @@ form {
   margin: 20px auto;
 }
 #recipe-form h2 {
-  color: #ff5733; 
+  color: #ff5733;
   font-size: 1.8rem;
   text-align: center;
   font-weight: bold;
 }
 
 .recipe-card ul li {
-  color: #fff; 
-  background: #ff5733; 
+  color: #fff;
+  background: #ff5733;
   font-weight: bold;
   padding: 8px;
   margin: 5px 0;
@@ -154,7 +145,7 @@ form {
   font-weight: bold;
 }
 #recipe-form h3 {
-  color: #ff5733; 
+  color: #ff5733;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -168,8 +159,8 @@ select {
   border-radius: 8px;
   font-size: 1rem;
   position: relative;
-  left: 0px; 
-  width: calc(100% - 20px); 
+  left: 0px;
+  width: calc(100% - 20px);
 }
 #description {
   width: 100%;
@@ -180,8 +171,9 @@ select {
   border-radius: 8px;
   font-size: 1rem;
   position: relative;
-  left: 0%; 
-  width: calc(100% - 20px); 
+  left: 0%;
+  width: calc(100% - 20px);
+}
 
 .ingredient-entry {
   display: flex;
@@ -189,19 +181,17 @@ select {
   margin-bottom: 10px;
 }
 
-
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: #fff; 
+  color: #fff;
 }
-
 
 input,
 textarea,
 select {
-  background-color: #04381e; 
-  color: white; 
+  background-color: #04381e;
+  color: white;
 }
 
 .timer-container {
@@ -216,7 +206,6 @@ select {
   margin-right: auto;
 }
 
-
 #timerInput {
   width: 80%;
   padding: 8px;
@@ -226,7 +215,6 @@ select {
   text-align: center;
   font-size: 16px;
 }
-
 
 #startTimer {
   background-color: #28a745;
@@ -243,14 +231,12 @@ select {
   background-color: #218838;
 }
 
-
 #timerDisplay {
   font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
   color: #333;
 }
-
 
 footer {
   margin-top: 20px;
