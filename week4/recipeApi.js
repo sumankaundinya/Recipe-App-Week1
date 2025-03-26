@@ -11,9 +11,10 @@ function fetchRecipes() {
       return response.json();
     })
     .then((data) => {
-      recipeArray = data; 
-      console.log(recipeArray); 
-      displayRecipe(recipeArray); 
+      recipeArray = data;
+      console.log(recipeArray);
+      displayRecipe(recipeArray);
+    })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
     });
