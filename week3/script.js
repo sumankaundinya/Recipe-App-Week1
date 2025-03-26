@@ -133,7 +133,6 @@ function displayRecipe(recipeArray) {
     container.appendChild(recipeCard);
   });
 }
-
 displayRecipe(recipeArray);
 
 document.getElementById("sort-button").addEventListener("click", function () {

@@ -11,10 +11,9 @@ function fetchRecipes() {
       return response.json();
     })
     .then((data) => {
-      recipeArray = data; // Parse the JSON data
-      console.log(recipeArray); // Check if the data is fetched successfully
-      displayRecipe(recipeArray); // Display recipes once fetched
-    })
+      recipeArray = data; 
+      console.log(recipeArray); 
+      displayRecipe(recipeArray); 
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
     });
