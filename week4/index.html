@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>RECIPE APP</h1>
+    <div id="recipe-container"></div>
+
+    <form id="recipe-form">
+      <h3>Add a New Recipe</h3>
+      <input
+        type="text"
+        id="title"
+        placeholder="Recipe Title"
+        required
+      /><br /><br />
+      <input
+        type="text"
+        id="picture"
+        placeholder="Image URL"
+        required
+      /><br /><br />
+      <textarea
+        id="description"
+        placeholder="Recipe Description"
+        required
+      ></textarea
+      ><br /><br />
+
+      <h3>Ingredients</h3>
+      <div id="ingredient-container">
+        <div class="ingredient-entry"></div>
+      </div>
+      <br />
+      <button type="button" id="add-ingredient">+ Add More</button><br /><br />
+      <button type="submit">Submit Recipe</button>
+      <button type="button" id="sort-button">Sort by Ingredients</button>
+      <input
+        type="text"
+        id="search-ingredient"
+        placeholder="Search Ingredients"
+      />
+      <button type="button" id="search-ingredient-button">Submit</button>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search recipes by title..."
+      />
+    </form>
+
+    <div class="timer-container">
+      <h3>Cooking Timer</h3>
+      <input type="number" id="timerInput" placeholder="Enter seconds" />
+      <button id="startTimer">Start Timer</button>
+      <p id="timerDisplay">Time left:</p>
+    </div>
+
+    <script src="recipeApi.js"></script>
+  </body>
+</html>
