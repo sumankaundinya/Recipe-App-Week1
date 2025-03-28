@@ -33,26 +33,18 @@
 
       <h3>Ingredients</h3>
       <div id="ingredient-container">
-        <div class="ingredient-entry">
-          <input
-            type="text"
-            class="ingredient-input"
-            placeholder="Ingredient Name"
-            required
-          />
-          <input
-            type="text"
-            class="ingredient-amount"
-            placeholder="Amount"
-            required
-          />
-        </div>
+        <div class="ingredient-entry"></div>
       </div>
       <br />
       <button type="button" id="add-ingredient">+ Add More</button><br /><br />
       <button type="submit">Submit Recipe</button>
       <button type="button" id="sort-button">Sort by Ingredients</button>
-
+      <input
+        type="text"
+        id="search-ingredient"
+        placeholder="Search Ingredients"
+      />
+      <button type="button" id="search-ingredient-button">Submit</button>
       <input
         type="text"
         id="search-input"
@@ -67,6 +59,6 @@
       <p id="timerDisplay">Time left:</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="recipeApi.js"></script>
   </body>
 </html>
