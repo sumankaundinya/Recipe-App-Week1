@@ -24,13 +24,14 @@ function displayRecipe(recipeArray) {
     const recipeCard = document.createElement("div");
     recipeCard.classList.add("recipe-card");
 
-    recipeCard.innerHTML = `
-                                                                                                <h2>${recipe.title}</h2>
-                                                                                                <img src="${recipe.picture_url}" alt="${recipe.title}" width="200">
-                                                                                                <p>${recipe.description}</p>
-                                                                                                <h3>Ingredients:</h3>
-                                                                                                <ul class="ingredient-list"></ul>
-                                                                                `;
+   recipeCard.innerHTML = `
+  <h2>${recipe.title}</h2>
+  <img src="${recipe.picture_url}" alt="${recipe.title}" width="200">
+  <p>${recipe.description}</p>
+  <h3>Ingredients:</h3>
+  <ul class="ingredient-list"></ul>
+`;
+
 
     const ingredientList = recipeCard.querySelector(".ingredient-list");
     recipe.ingredients.forEach((ingredient) => {
